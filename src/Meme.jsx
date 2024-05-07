@@ -36,7 +36,7 @@ function Meme() {
 
     function handleDownload() {
         const img = new Image();
-        img.crossOrigin = "anonymous"; // Enable CORS for the image
+        img.crossOrigin = "anonymous"; 
         img.src = meme.randomImage;
         img.onload = function () {
             const canvas = document.createElement("canvas");
