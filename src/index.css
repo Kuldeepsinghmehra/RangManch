@@ -59,9 +59,16 @@ main{
     display:flex;
     justify-content: center;
     align-items: center;
+    width:100%;
+    max-width:500px;
+    height:auto;
+    text-align:center;
+    margin:0 auto;
 }
 .meme-image{
-    max-width: 100%;
+    width:100%;
+    height:auto;
+    object-fit:cover
     border-radius:3px;
 }
 .meme-text{
