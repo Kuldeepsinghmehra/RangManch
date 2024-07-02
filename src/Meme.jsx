@@ -1,9 +1,8 @@
-
-
-
 import { useState, useEffect } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Meme() {
+    const { loginWithRedirect, isAuthenticated } = useAuth0();
     const [meme, setMeme] = useState({
         topText: "",
         bottomText: "",
@@ -35,6 +34,11 @@ function Meme() {
     }
 
     function handleDownload() {
+        if (!isAuthenticated) {
+            alert("You need to log in to download the meme.");
+            loginWithRedirect();
+            return;
+        }
         const img = new Image();
         img.crossOrigin = "anonymous"; 
         img.src = meme.randomImage;

@@ -27,6 +27,20 @@ body{
     font-weight: 500;
 
 }
+
+.auth-button {
+    background-color:  transparent;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    padding: 3px 23px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+
+
 main{
     padding: 36px;
 }
