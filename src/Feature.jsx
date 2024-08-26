@@ -2,7 +2,7 @@ import React from 'react'
 
 function Feature() {
   return (
-    <div>This is my main feature</div>
+    <div className='bg-slate-600'>This is my main feature</div>
   )
 }
 
